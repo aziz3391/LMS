@@ -1,0 +1,15 @@
+@import './library/colors.scss';
+@import './library/grid.scss';
+@import './library/font.scss';
+@import './library/class.scss';
+@import './components/Header.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: medium;
+}

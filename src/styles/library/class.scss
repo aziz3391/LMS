@@ -1,0 +1,22 @@
+// $purple: #78258D;
+@import './colors.scss';
+
+.btn {
+    background-color: $purple;
+    padding: 12px 18px;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-family: "Semibold";
+    border: 1px solid $purple;
+
+    &:hover {
+        background-color: lighten($purple, 10%);
+    }
+
+    &.outline {
+        background: unset;
+        font-family: 'Regular';
+        border: lighten($purple, 10%);
+    }
+}

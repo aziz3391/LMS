@@ -1,0 +1,30 @@
+@import '/src/styles/library/mixin.scss';
+
+.container {
+    max-width: 1440px;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: content-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        @include fb(percentage($i/12))
+    }
+}
+
+
+// .col-3 {@include fb(percentage(3/12))}
+// .col-4 {@include fb(percentage(4/12))}
+// .col-6 {@include fb(percentage(6/12))}
+// .col-8 {@include fb(percentage(8/12))}
+// .col-9 {@include fb(percentage(9/12))}

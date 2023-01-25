@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    border: 0;
+    background: unset;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: "Heavy";
+    margin: 0;
+}
+
+h2 {
+    font-size: 46px;
+    font-family: "Heavy";
+}
+
+h3 {
+    font-size: 36px;
+    font-family: "Bold";
+}
