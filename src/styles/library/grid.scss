@@ -28,3 +28,43 @@
 // .col-6 {@include fb(percentage(6/12))}
 // .col-8 {@include fb(percentage(8/12))}
 // .col-9 {@include fb(percentage(9/12))}
+@media(max-width:1366px) {
+    @for $i from 1 through 12 {
+        .col-xl-#{$i} {
+            @include fb(percentage($i/12))
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    @for $i from 1 through 12 {
+        .col-lg-#{$i} {
+            @include fb(percentage($i/12))
+        }
+    }
+}
+
+@media(max-width:768px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            border: none;
+            @include fb(percentage($i/12))
+        }
+    }
+}
+
+@media(max-width:600px) {
+    @for $i from 1 through 12 {
+        .col-sm-#{$i} {
+            @include fb(percentage($i/12))
+        }
+    }
+}
+
+@media(max-width:375px) {
+    @for $i from 1 through 12 {
+        .col-xs-#{$i} {
+            @include fb(percentage($i/12))
+        }
+    }
+}

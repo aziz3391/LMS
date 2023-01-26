@@ -39,7 +39,18 @@ nav {
         padding-top: 0px;
         // margin-right: 15px;
         cursor: pointer;
+
         // border: 1px solid black;
+        a {
+            text-decoration: none;
+            color: black;
+
+            &:hover,
+            :active {
+                color: $purple;
+                border-bottom: 1px solid $purple;
+            }
+        }
 
         &:hover,
         :active {

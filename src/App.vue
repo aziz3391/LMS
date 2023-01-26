@@ -1,5 +1,6 @@
 <template>
   <HeaderItem />
+  <router-view></router-view>
 </template>
 
 <script>

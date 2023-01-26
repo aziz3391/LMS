@@ -1,12 +1,13 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-  </div>
+  <WelcomeItem />
 </template>
 
 <script>
+import WelcomeItem from "@/components/welcomepage/WelcomeItem.vue";
 export default {
   name: "HomeView",
-  components: {},
+  components: {
+    WelcomeItem,
+  },
 };
 </script>

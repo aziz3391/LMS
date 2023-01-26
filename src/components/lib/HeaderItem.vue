@@ -1,15 +1,23 @@
 <template>
   <nav>
     <div class="firstitem">
-      <img class="imghead" src="/src/assets/img/logo.png" alt="School Logo" />
+      <img class="imghead" src="../../assets/img/logo.png" alt="School Logo" />
       <ul class="ulhead">
-        <li>Курсы</li>
-        <li>О нас</li>
-        <li>Блог</li>
-        <li>Ещё</li>
+        <li>
+          <router-link to="/"> Курсы </router-link>
+        </li>
+        <li>
+          <router-link to="/"> О нас </router-link>
+        </li>
+        <li>
+          <router-link to="/"> Блог </router-link>
+        </li>
+        <li>
+          <span> Ещё </span>
+        </li>
       </ul>
     </div>
-
+    <!-- <router-view></router-view> -->
     <button class="btnhead">Войти</button>
   </nav>
 </template>
