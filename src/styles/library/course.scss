@@ -1,0 +1,26 @@
+// .container {
+
+// border: 1px solid black;
+// }
+@import './class.scss';
+@import './colors.scss';
+
+h2 {
+    width: 650px;
+}
+
+.without {
+    border: none;
+}
+
+.d-flex {
+    position: relative;
+    width: 1439px;
+}
+
+
+.outline {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

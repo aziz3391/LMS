@@ -1,10 +1,77 @@
+@import '../library/colors.scss';
+@import '../library/reset';
+
+
+.welcome {
+    margin: 50px 0;
+}
+
 .container {
     // border: 1px solid black;
     margin: auto;
     width: 1440px;
 }
 
-.col-md-12 {
-    border: none;
+.newrow {
+    display: flex;
+    flex-wrap: nowrap;
+    // border: 1px solid black;
+}
 
+.col-md-12 {
+    display: flex;
+    border: none;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 56px;
+}
+
+.imging {
+    margin: auto;
+
+    margin-right: 200px;
+}
+
+.welcoming_word {
+    color: $blue;
+}
+
+.both {
+    height: 50%;
+    margin-top: -50px;
+}
+
+h1 {
+    width: 600px;
+}
+
+.up {
+    margin-bottom: 40px;
+}
+
+.under {
+    margin-top: 10px;
+    display: flex;
+    // gap: 10px;
+    // border: 1px solid black;
+}
+
+
+span {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    opacity: 0.7;
+    margin-left: 32px;
+    transition-duration: 300ms;
+
+    &:hover {
+        opacity: 1;
+    }
 }

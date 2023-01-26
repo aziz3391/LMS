@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import HeaderItem from "./components/lib/HeaderItem.vue";
+import HeaderItem from "./components/Header/HeaderItem.vue";
 export default {
   components: {
     HeaderItem,
@@ -15,4 +15,5 @@ export default {
 
 <style lang="scss">
 @import "/src/styles/app";
+@import "@splidejs/vue-splide/css";
 </style>

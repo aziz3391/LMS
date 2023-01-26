@@ -28,3 +28,16 @@ h3 {
     font-size: 36px;
     font-family: "Bold";
 }
+
+h4 {
+    font-size: 20px;
+    // font-family: "Medium";
+    font-weight: normal;
+    color: gray;
+}
+
+h5 {
+    font-size: 16px;
+    font-family: 'Semi-bold';
+    color: $purple;
+}

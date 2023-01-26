@@ -13,3 +13,13 @@
 body {
     font-family: medium;
 }
+
+.d-flex {
+    display: flex;
+    // justify-content: space-between;
+}
+
+.aic {
+    display: flex;
+    align-items: center;
+}
