@@ -6,17 +6,15 @@
         <button class="btn outline">Все курсы</button>
       </div>
     </div>
-   <CourseList/>
+    <CourseList />
   </div>
 </template>
 
 <script>
-
-import CourseList from "@/components/courses/CourseList.vue";
+import CourseList from "@/components/home/courses/CourseList.vue";
 export default {
   components: {
     CourseList,
-   
   },
 };
 </script>

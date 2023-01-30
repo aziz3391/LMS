@@ -1,0 +1,64 @@
+.l2go {
+    background: linear-gradient(129.1deg, #2E90D1 57.94%, #78258D 71.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 46px;
+    // text-align: left;
+    margin: 0;
+}
+
+.h3for {
+    font-size: 46px;
+    font-family: Heavy;
+    margin-bottom: 30px;
+}
+
+.ltg {
+
+    font-size: 20px;
+    background: linear-gradient(129.1deg, #2E90D1 57.94%, #78258D 71.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.mt-40 {
+    margin-top: 40px;
+    width: 269px;
+    height: 60px
+}
+
+.col-md-12 {
+    align-items: flex-start;
+    margin-top: 100px;
+    // border: 1px solid red;
+    // padding-top: 100px;
+}
+
+.cntr_mt {
+    margin-top: 100px;
+}
+
+.whom {
+    &_candidates {
+        font-size: 24px;
+        font-family: "Bold";
+        margin-top: 16px;
+        margin-bottom: 10px;
+    }
+
+    &_text {
+        font-size: 16px;
+        font-family: "Medium";
+    }
+}
+
+.col-sm-12 {
+    margin-bottom: 40px;
+    border: none;
+    margin-top: 0;
+}

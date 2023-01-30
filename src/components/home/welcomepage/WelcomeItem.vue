@@ -15,14 +15,14 @@
             <div class="under">
               <button class="btn">Попробовать бесплатно</button>
               <span
-                ><img src="../../assets/icons/play-icon.svg" alt="" />Посмотреть
+                ><img src="../../../assets/icons/play-icon.svg" alt="" />Посмотреть
                 промо-ролик</span
               >
             </div>
           </div>
         </div>
         <div class="col-6 col-md-12">
-          <img class="imging" src="../../assets/img/welcomman.png" />
+          <img class="imging" src="../../../assets/img/welcomman.png" />
         </div>
       </div>
     </div>
@@ -34,5 +34,5 @@ export default {};
 </script>
 
 <style lang="scss">
-@import "../../styles/components/Welcome";
+@import "../../../styles/components/Welcome";
 </style>
