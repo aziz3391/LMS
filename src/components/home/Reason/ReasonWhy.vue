@@ -4,7 +4,6 @@
       <h2 class="l714">Почему вы быстро освоите язык</h2>
     </div>
     <div class="row centeredrow">
-      <!-- <div class="row mt-100"> -->
 
       <div class="col-6 col-md-12
 " id="forleft">
@@ -30,14 +29,22 @@
             alt=""
           />
         </div>
-        <!-- </div> -->
       </div>
+    </div>
+    <div class="row">
+      <!-- 2nd reason -->
+      <ReasonTwo/>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import ReasonTwo from "@/components/home/Reason/ReasonTwo.vue"
+export default {
+  components:{
+    ReasonTwo
+  }
+};
 </script>
 
 <style lang="scss">
