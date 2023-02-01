@@ -1,0 +1,55 @@
+.box {
+    height: 460px;
+
+}
+
+.mb{margin-bottom: 100px;}
+
+.numberred {
+    width: 65px;
+    height: 28px;
+    background-color: #E42125;
+    color: white;
+    border-radius: 100px;
+    // padding: auto;
+    text-align: center;
+    padding-top: 5px;
+    margin-bottom: 22px;
+}
+
+.h36 {
+    font-size: 36px;
+    font-family: "Bold";
+    margin-bottom: 19px;
+}
+
+.p20 {
+    font-size: 20px;
+    font-family: "Medium";
+    width: 578px;
+    margin-bottom: 38px;
+}
+
+.leftalign {
+    display: flex;
+    align-items: center;
+
+}
+
+.sizing {
+    width: 700px;
+    height: 420px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.inside {
+    width: fit-content;
+    position: absolute;
+    top: 96px;
+}
+
+.dflex {
+    display: flex;
+}

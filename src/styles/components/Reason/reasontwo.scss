@@ -1,7 +1,7 @@
 .box {
     height: 326px;
     width: 100%;
-    border: 2px solid yellow;
+    // border: 2px solid yellow;
     position: relative;
 }
 
@@ -24,15 +24,16 @@
     border-radius: 20px;
 }
 
-#width700{
+#width700 {
     width: 700px;
     height: 326px;
 }
+
 .inneritem {
     position: absolute;
     width: 197.13px;
     height: 228px;
-    top: 49px;
+    top: 70px;
     left: 0px;
     // border: 1px solid black;
     border-radius: 20px;
@@ -40,24 +41,37 @@
     align-items: center;
     // justify-content: center;
     flex-direction: column;
+    // margin:auto
 }
-.starleft{
+
+.starleft {
     display: flex;
     width: 87.5px;
-height: 15.82px;
-margin: auto;
+    height: 15.82px;
+    margin: auto;
 }
-.leftalign{
-    display: flex;flex-direction: column;
+
+.starmiddle {
+    width: 123.59px;
+    margin: auto;
+    height: 22.34px;
+}
+
+.leftalign {
+    display: flex;
+    flex-direction: column;
     align-items: start;
 }
-.p8{
+
+.p8 {
     font-size: 8px;
 }
-.h18{
+
+.h18 {
     font-size: 18px;
     font-family: "Bold";
 }
+
 .middleitem {
     position: absolute;
     width: 305.75px;
@@ -70,12 +84,25 @@ margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.h26 {
+    font-size: 26px;
+    font-family: "Bold";
+}
+
+.p12 {
+    font-size: 12px;
+    font-family: "Regular";
 }
 
 .innertwo {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     // border: 1px solid black;
     position: absolute;
     width: 197.13px;
@@ -83,5 +110,46 @@ margin: auto;
     top: 49px;
     left: 502.87px;
     border-radius: 20px;
+    margin: auto;
+}
 
+.cnter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nd {
+    padding: 4px 22px;
+    // gap: 8px;
+    // position: absolute;
+    width: 65px;
+    height: 28px;
+    background: #78258D;
+    border-radius: 100px;
+    padding: 4px 22px;
+    color: white;
+    text-align: center;
+    margin-top: 46px;
+}
+
+.h36 {
+    font-size: 36px;
+    font-family: "Bold";
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+.p20{
+    font-size: 20px;
+    font-family: "Medium";
+    width: 506px;
+}
+.centered{
+    margin: auto;
+    // border: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+}
+.noborder{
+    border: none;
 }

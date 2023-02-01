@@ -35,14 +35,19 @@
       <!-- 2nd reason -->
       <ReasonTwo/>
     </div>
+    <div class="row">
+      <ReasonThree/>
+    </div>
   </div>
 </template>
 
 <script>
 import ReasonTwo from "@/components/home/Reason/ReasonTwo.vue"
+import ReasonThree from "@/components/home/Reason/ReasonThree.vue"
 export default {
   components:{
-    ReasonTwo
+    ReasonTwo,
+    ReasonThree
   }
 };
 </script>
