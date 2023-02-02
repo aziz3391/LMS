@@ -7,7 +7,7 @@
           :options="{
             type: 'loop',
             perPage: 3,
-            autoplay: false,
+            autoplay: true,
             arrows: false,
             gap: 40,
           }"

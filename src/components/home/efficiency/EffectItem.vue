@@ -10,24 +10,24 @@
         </h2>
         <div class="wholething">
           <div class="onething">
-            <!-- <div class="cirle"></div> -->
-            <!-- <p class="p20"> -->
+            <div class="circle"></div>
+            <div class="pas">
               Самостоятельно выбираете удобный режим и время прохождения заданий
-            <!-- </p> -->
+            </div>
           </div>
           <div class="onething">
-            <!-- <div class="cirle"></div> -->
-            <!-- <p class="p20"> -->
+            <div class="circle"></div>
+            <div class="pas">
               Современная эффективная методика обучения гарантирует освоение
               языка на максимально высоком уровне за короткий срок
-            <!-- </p> -->
+            </div>
           </div>
           <div class="onething">
-            <!-- <div class="cirle"></div> -->
-            <!-- <p class="p20"> -->
+            <div class="circle"></div>
+            <div class="pas">
               Полная автоматизация позволяет нам предоставлять самую низку цену
               - в 2, 3, а то и в 5 раз дешевле других языковых школ.
-            <!-- </p> -->
+            </div>
           </div>
         </div>
       </col-6>

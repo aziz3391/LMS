@@ -18,21 +18,28 @@
 }
 
 .circle {
+    position: absolute;
     width: 20px;
     height: 24px;
     border-radius: 50%;
+    display:flex;
     background: linear-gradient(132.51deg, #2E90D1 61.42%, #78258D 83.67%);
 }
 
 .onething {
-    display: inline-block;
-// height: auto;
-border:1px solid red    ;
-height:fit-content ;
-// position: relative;
-width: 596px;
-// 
-font-size: 20px;
+    display: flex;
+    // height: auto;
+    // border:1px solid red    ;
+    height: fit-content;
+    // position: relative;
+    width: 596px;
+    // 
+    // text-align: end;
+    font-size: 20px;
+}
+.pas{
+    // position: absolute;
+    margin-left: 30px;
 }
 
 // .p20{
@@ -41,8 +48,9 @@ font-size: 20px;
 //     position: relative;
 // }
 .wholething {
-    gap: 0px;
+    margin-top: 24px;
+    gap: 16px;
     display: flex;
     flex-direction: column;
-    border: 1px solid yellow;
+    // border: 1px solid yellow;
 }
