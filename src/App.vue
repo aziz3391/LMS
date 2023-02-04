@@ -1,5 +1,5 @@
 <template>
-  <HeaderItem />
+  <HeaderItem class="sticky"/>
   <router-view style="margin-bottom:500px"></router-view>
   <FooterItem/>
 </template>

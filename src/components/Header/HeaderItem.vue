@@ -1,10 +1,13 @@
 <template>
-  <nav>
+  <nav class="sticky">
     <div class="firstitem">
-      <img class="imghead" src="../../assets/img/logo.png" alt="School Logo" />
+      <router-link 
+      to="/">
+      <img class="imghead mt28 ml50" src="../../assets/img/logo.png" alt="School Logo" />
+      </router-link>
       <ul class="ulhead">
         <li>
-          <router-link to="/"> Курсы </router-link>
+          <router-link to="/course"> Курсы </router-link>
         </li>
         <li>
           <router-link to="/"> О нас </router-link>

@@ -1,0 +1,112 @@
+@import '../../library/colors.scss';
+
+.h24bold {
+    font-size: 24px;
+    font-family: "Bold";
+    text-align: start;
+    // width: fit-content;
+
+}
+
+.ml0 {
+    margin-left: 0;
+}
+
+.plus {
+    width: 32px;
+    height: 32px;
+}
+
+.fborder {
+    border: 1px solid green;
+}
+
+.faq_title {
+    width: 899px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq_body {
+    margin: 24px;
+    margin-top: 0;
+    width: 899px;
+    height: 96px;
+    font-family: "Medium";
+}
+
+.faq_header {
+    height: 80px;
+    width: 947px;
+    padding: 24px;
+}
+
+.faq_box {
+    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px rgba(46, 144, 209, 0.08);
+    border-radius: 10px;
+    transition-duration: 0.3s;
+
+    &.open {
+        background-color: #EFEFFF;
+
+        // height: fit-content;
+        .faq_body {
+            transition: 0.7s;
+            // overflow: visible;
+            max-height: 200px;
+            //    background-color: blue;
+        }
+
+        .plus {
+            background-color: $purple;
+
+            &:after{
+                background-color: white;
+                transform: rotate(45deg);
+                transition: ease-in-out;
+                transition-duration: 0.3s;
+            }
+            &:before {
+                background-color: white;
+                transform: rotate(-45deg);
+                transition: ease-in-out;
+                transition-duration: 0.3s;
+            }
+        }
+    }
+
+}
+
+.faq_body {
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.plus {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    position: relative;
+
+    &:after,
+    &:before {
+        content: "";
+        width: 20px;
+        display: inline-block;
+        border-radius: 1px;
+        height: 2px;
+        background-color: $purple;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    &:after {
+        transform: rotate(90deg);
+    }
+}

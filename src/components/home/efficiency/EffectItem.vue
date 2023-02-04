@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container ">
     <div class="row meditation">
       <col-6 class="col-md-12">
         <img src="../../../assets/img/meditation.png" alt="" />

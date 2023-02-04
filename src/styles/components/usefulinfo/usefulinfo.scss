@@ -1,0 +1,109 @@
+@import '../../library/colors.scss';
+
+.w1480 {
+    width: 1480px;
+}
+
+.btn.outline.w127 {
+    width: 127px;
+    font-size: 16px;
+}
+
+.relative {
+    position: relative;
+}
+
+.dffdc {
+    display: flex;
+    flex-direction: column;
+}
+
+.h24 {
+    font-size: 24px;
+    font-family: "Bold";
+}
+
+.p16blue {
+    font-size: 16px;
+    color: $blue;
+}
+
+.p16 {
+    font-size: 16px;
+}
+
+.newsu {
+    width: 104px;
+    height: 34px;
+    background: #EFEFFF;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 34px;
+}
+
+.jcb {
+    // border: 1px solid;
+    justify-content: space-between;
+}
+
+.w373 {
+    width: 373px;
+}
+
+
+.aic{
+    align-items: center;
+}
+.right_rdlineu {
+    display: flex;
+    align-items: end;
+
+}
+.w100percent{
+width: 100%;
+}
+.mb100{
+    margin-bottom: 100px;
+}
+.gap40{
+    gap: 40px;
+}
+.uborder {
+    border: 1px solid #EFEFFF;
+    box-shadow: 0px 4px 20px #F7F6FB;
+    border-radius: 20px;
+    margin-top: 60px;
+    // width: 28%;
+}
+
+.h34 {
+    height: 34px;
+}
+
+.lh24 {
+    line-height: 24px;
+    font-size: 16px;
+    font-family: "Semi-bold";
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    color: $purple;
+}
+
+.mb6 {
+    margin-bottom: 6px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb24 {
+    margin-bottom: 24px;
+}
+
+.ma {
+    // margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

@@ -23,3 +23,9 @@ body {
     display: flex;
     align-items: center;
 }
+.sticky{
+    position: sticky;
+  z-index: 1;
+    top: 0;
+    background-color: white
+}

@@ -5,6 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.mt28{
+    margin-top: 28px;
+    position:absolute;
+    top: 28px;
+    left: 50px;
+}
 
 body {
     font-family: medium;
@@ -32,6 +38,7 @@ nav {
     justify-content: flex-start;
     margin: auto;
     gap: 15px;
+    margin-left: 225px;
 
     // border: 1px solid black;
     span {

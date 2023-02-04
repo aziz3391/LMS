@@ -1,0 +1,48 @@
+@import "../library/colors.scss";
+.stlinecourse{
+    display: flex;
+    width: 140px;
+    height: 24px;
+}
+.p14{
+    font-size: 14px;
+    line-height: 24px;
+}
+.cpurple{
+    color: $purple;
+
+}
+.w2424{
+    width: 24px;
+    height: 24px;
+    display: flex;
+}
+.ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li a{
+    text-decoration: underline;
+}
+.c4F4F4F{
+    color: #4F4F4F;
+}
+.list_lang{
+    display: flex;
+    gap:15px
+}
+.gap40{
+    display: flex;gap: 40px;
+}
+.h34w69{
+    height: 34px;
+    padding: 5px;
+    width: 69px;
+}
+.w1480{
+    width: 1480px;
+}
+.mt30{
+    margin-top: 30px;
+}
