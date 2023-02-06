@@ -10,10 +10,10 @@
           <router-link to="/course"> Курсы </router-link>
         </li>
         <li>
-          <router-link to="/"> О нас </router-link>
+          <router-link to="/about"> О нас </router-link>
         </li>
         <li>
-          <router-link to="/"> Блог </router-link>
+          <router-link to="/blog"> Блог </router-link>
         </li>
         <li>
           <span> Ещё </span>

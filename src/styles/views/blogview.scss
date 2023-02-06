@@ -88,14 +88,30 @@ li a {
     width: 69px;
 }
 
+.txtpurple {
+    color: $purple;
+    margin: 0;
+    opacity: 1;
+}
+
+.p20medium {
+    font-size: 20px;
+}
+
+.c585858 {
+    color: #585858;
+}
+
 .w1480vh {
-    // height: 100vh;
+
     width: 1480px;
     margin: 0px auto;
 }
-.oneitemcourse{
+
+.oneitemcourse {
     display: flex;
 }
+
 .mt30 {
     margin-top: 30px;
 }
@@ -200,8 +216,130 @@ label {
     font-size: 20px;
     font-family: "Medium";
 }
-.sticky15{
+
+.sticky15 {
     // z-index: 1;
     position: sticky;
     top: 130px;
+}
+
+/*
+padding: 40px;
+gap: 20px;
+
+position: absolute;
+width: 947px;
+height: 254px;
+left: 240px;
+top: 448px;
+*/
+
+.blog1 {
+    height: 254px;
+    padding: 40px;
+    gap: 20px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFFF;
+    box-shadow: 0px 4px 20px #F7F6FB;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.p24bold {
+    font-size: 24px;
+    font-family: "Bold";
+    font-weight: 400;
+    width: 867px;
+}
+
+.e90d1 {
+    color: #2E90D1;
+}
+
+.p16medium {
+    font-size: 16px;
+    font-family: "Medium";
+}
+
+.mt6mb10 {
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+
+.p5 {
+    padding: 5px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.blog2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.blog3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.half {
+    width: 48%;
+    height: 346px;
+    background: #FFFFFF;
+    padding: 40px;
+    border: 1px solid #DEF1FF;
+    box-shadow: 0px 4px 20px #F7F6FB;
+    border-radius: 20px;
+}
+
+.half2 {
+    width: 48%;
+    height: 346px;
+    padding: 40px;
+    background: #FFFFFF;
+    border: 1px solid #FFEFEF;
+    box-shadow: 0px 4px 20px #F7F6FB;
+    border-radius: 20px;
+}
+
+.dfgap40 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.p24bold {
+    font-size: 24px;
+    font-family: "Bold";
+}
+
+.greenish {
+    padding: 5px 20px;
+    gap: 10px;
+    width: 93px;
+    height: 34px;
+    background: #DEF1FF;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Medium";
+  
+}
+.lastlinehalfblog{
+    margin-top: 24px;
+}
+.redish {
+    padding: 5px 20px;
+    gap: 10px;
+    width: 136px;
+    height: 34px;
+    background: #FFEFEF;
+    border-radius: 4px;
+    
+    font-size: 16px;
+    font-family: "Medium";
+  
 }

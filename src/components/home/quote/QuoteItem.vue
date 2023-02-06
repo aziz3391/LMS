@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row mt100 d-flex">
+    <div class="row mt100 d-flexq">
       <h2>
         Что говорят о нас <br />
         ученики?

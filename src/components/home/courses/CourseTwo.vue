@@ -3,11 +3,11 @@
               <img src="../../../assets/flags/china.png" alt="china" class="f1" />
               <h3 class="name">Китайский для начального уровня</h3>
               <div class="fortext">
-                <div class="d-flex first">
+                <div class="d-flex p16 first">
                   <p class="norm">Длительность:</p>
                   <p class="bold">45 часов</p>
                 </div>
-                <div class="d-flex second">
+                <div class="d-flex p16 second">
                   <p class="norm">Модулей:</p>
                   <p class="bold">3</p>
                 </div>

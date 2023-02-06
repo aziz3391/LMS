@@ -1,7 +1,7 @@
 <template>
   <HeaderItem class="sticky"/>
-  <router-view style="margin-bottom:500px"></router-view>
-  <FooterItem/>
+  <router-view style="margin-bottom:100px"></router-view>
+  <FooterItem />
 </template>
 
 <script>
@@ -17,6 +17,7 @@ export default {
 
 
 <style lang="scss">
+
 @import "/src/styles/app";
 @import "@splidejs/vue-splide/css";
 </style>

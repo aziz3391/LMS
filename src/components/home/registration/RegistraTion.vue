@@ -2,10 +2,10 @@
   <div class="container mtb100">
     <div class="row cwhite">
       <div class="col-6 col-md-12 dfaicjcc">
-            <h2 class="mb40">
+        <h2 class="mb40">
           Регистрируйтесь и приступайте к первому бесплатному уроку
-          </h2>
-           <div class="underitemreg widthlength">
+        </h2>
+        <div class="underitemreg widthlength">
           <div class="reg1">
             <div class="linereg1">
               <p class="p14 c232323">Телефон *</p>
@@ -19,16 +19,23 @@
               </div>
             </div>
           </div>
-          <div class="reg2 dflex">
-            <input id="agree" type="checkbox" class="checkbox" />
+          <div class="reg2 d-flex">
+            <div class="d-flex">
+              <input id="agree" type="checkbox" class="checkbox" />
 
-            <label class="p16w561 gray checkit" for="agree"
-              >Отправляя заявку, я соглашаюсь с
-              <router-link to="/"> политикой конфиденциальности </router-link> и
-              <router-link to="/">
-                пользовательским соглашением</router-link
-              ></label
-            >
+              <label class="p16w561 gray checkit" for="agree">
+                <div class="n">
+                  Отправляя заявку, я соглашаюсь с
+                  <router-link to="/">
+                    политикой конфиденциальности
+                  </router-link>
+                  и
+                  <router-link to="/">
+                    пользовательским соглашением</router-link
+                  >
+                </div>
+              </label>
+            </div>
           </div>
         </div>
       </div>
