@@ -4,7 +4,7 @@
       <col-6 class="col-md-12">
         <img src="../../../assets/img/meditation.png" alt="" />
       </col-6>
-      <col-6 class="col-md-12">
+      <col-6 class="col-md-12 paddingcol12">
         <h2 class="h54">
           Эффективная методика изучения языка <span class="l2go">L2GO </span>
         </h2>

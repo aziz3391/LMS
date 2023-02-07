@@ -1,9 +1,12 @@
 <template>
   <nav class="sticky">
     <div class="firstitem">
-      <router-link 
-      to="/">
-      <img class="imghead mt28 ml50" src="../../assets/img/logo.png" alt="School Logo" />
+      <router-link to="/">
+        <img
+          class="imghead mt28 ml50"
+          src="../../assets/img/logo.png"
+          alt="School Logo"
+        />
       </router-link>
       <ul class="ulhead">
         <li>
@@ -15,8 +18,19 @@
         <li>
           <router-link to="/blog"> Блог </router-link>
         </li>
-        <li>
-          <span> Ещё </span>
+        <li class="dropdown">
+          <span class="dropbtn"> Ещё </span>
+          <div class="dropdown-content">
+            <div class="dropitem">
+              <a href="#">FAQ</a>
+            </div>
+            <div class="dropitem">
+              <a href="#">Контакты</a>
+            </div>
+            <div class="dropitem">
+              <a href="#">Условия оплаты</a>
+            </div>
+          </div>
         </li>
       </ul>
     </div>

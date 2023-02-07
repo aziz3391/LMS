@@ -16,15 +16,26 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path:'/course',
+    path: '/course',
     name: 'course',
-    component:()=> import('../views/CourseView.vue')
+    component: () => import('../views/CourseView.vue')
   },
   {
-    path:'/blog',
+    path: '/blog',
     name: 'blog',
-    component: ()=>import('../views/BlogView.vue')
+    component: () => import('../views/BlogView.vue')
+  },
+  {
+    path: '/faq',
+    name: 'faq',
+    component: () => import('../views/more/FaqView.vue')
+  },
+  {
+    path: '/blogs',
+    name: 'blogs',
+    component: () => import('../components/blog/BlogMore.vue')
   }
+
 ]
 
 const router = createRouter({

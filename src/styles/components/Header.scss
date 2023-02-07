@@ -5,9 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-.mt28{
+
+.mt28 {
     margin-top: 28px;
-    position:absolute;
+    position: absolute;
     top: 28px;
     left: 50px;
 }
@@ -91,5 +92,31 @@ nav {
     border: 0px;
     color: white;
     background-color: #78258D;
-    ;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropbtn:hover+.dropdown-content {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+    width: 194px;
+    height: 142px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+}
+
+.dropitem {
+    width: 194px;
+    height: 44px;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    font-family: "Semi-bold";
+    background-color: white;
 }

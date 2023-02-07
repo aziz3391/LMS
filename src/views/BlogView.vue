@@ -1,6 +1,6 @@
 <template>
   <div class="container full">
-    <div class="row1 w1480vh dfc">
+    <div class="row1 fit w1480vh dfc">
       <div class="dfc">
         <div class="stlinecourseup d-flex">
           <ul class="ul d-flex">
@@ -44,13 +44,16 @@
             </p>
             <div class="lastlineblog d-flex jcb mt20">
               <button class="newsu">Новость</button>
-              <div class="right_blog d-flex p5">
-                <h5>Подробнее</h5>
+              <div class="right_blog ">
+                
+                  <router-link to="/blogs" class="d-flex p5 w120"> <h5>Подробнее </h5>
+                
                 <img
                   src="../assets/else/arrow-right.png"
                   alt="right  arrow"
                   class="arrow"
                 />
+                  </router-link>
               </div>
             </div>
           </div>
@@ -68,13 +71,14 @@
               </p>
               <div class="lastlinehalfblog d-flex jcb">
                 <button class="greenish">Статья</button>
-                <div class="right_blog d-flex p5">
-                  <h5>Подробнее</h5>
+                <div class="right_blog ">
+                   <router-link to="/blogs" class="d-flex p5 w120"> <h5>Подробнее</h5> 
                   <img
                     src="../assets/else/arrow-right.png"
                     alt="right  arrow"
                     class="arrow"
                   />
+                   </router-link>
                 </div>
               </div>
             </div>
@@ -91,13 +95,14 @@
               </p>
               <div class="lastlinehalfblog d-flex jcb">
                 <button class="redish">Интересное</button>
-                <div class="right_blog d-flex p5">
-                  <h5>Подробнее</h5>
+                <div class="right_blog">
+                   <router-link to="/blogs" class=" d-flex p5 w120"> <h5> Подробнее </h5>
                   <img
                     src="../assets/else/arrow-right.png"
                     alt="right  arrow"
                     class="arrow"
                   />
+                   </router-link>
                 </div>
               </div>
             </div>
@@ -116,13 +121,16 @@
               </p>
               <div class="lastlinehalfblog d-flex jcb">
                 <button class="greenish">Статья</button>
-                <div class="right_blog d-flex p5">
+                <div class="right_blog ">
+                  <router-link class="d-flex p5 w120" to="/blogs"> 
+                 
                   <h5>Подробнее</h5>
                   <img
                     src="../assets/else/arrow-right.png"
                     alt="right  arrow"
                     class="arrow"
                   />
+                   </router-link>
                 </div>
               </div>
             </div>
@@ -139,35 +147,87 @@
               </p>
               <div class="lastlinehalfblog d-flex jcb">
                 <button class="redish">Интересное</button>
-                <div class="right_blog d-flex p5">
+                <div class="right_blog">
+                   <router-link class=" d-flex  w120 p" to="/blogs"> 
                   <h5>Подробнее</h5>
                   <img
                     src="../assets/else/arrow-right.png"
                     alt="right  arrow"
                     class="arrow"
                   />
+                    </router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog3">
+            <div class="half">
+              <p class="p24bold">
+                Новая система скидок в <br />
+                Language2GO: успейте забрать <br />
+                максимум!
+              </p>
+              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
+              <p class="p16medium c585858">
+                Для многих стоимость изучения иностранного языка является важным
+                критерием при выборе системы обучения.
+              </p>
+              <div class="lastlinehalfblog d-flex jcb">
+                <button class="greenish">Статья</button>
+                <div class="right_blog ">
+                  <router-link class="d-flex p5 w120" to="/blogs"> 
+                 
+                  <h5>Подробнее</h5>
+                  <img
+                    src="../assets/else/arrow-right.png"
+                    alt="right  arrow"
+                    class="arrow"
+                  />
+                   </router-link>
+                </div>
+              </div>
+            </div>
+            <div class="half2">
+              <p class="p24bold">
+                Новая система скидок в <br />
+                Language2GO: успейте забрать <br />
+                максимум!
+              </p>
+              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
+              <p class="p16medium c585858">
+                Для многих стоимость изучения иностранного языка является важным
+                критерием при выборе системы обучения.
+              </p>
+              <div class="lastlinehalfblog d-flex jcb">
+                <button class="redish">Интересное</button>
+                <div class="right_blog">
+                   <router-link class=" d-flex  w120 p" to="/blogs"> 
+                  <h5>Подробнее</h5>
+                  <img
+                    src="../assets/else/arrow-right.png"
+                    alt="right  arrow"
+                    class="arrow"
+                  />
+                    </router-link>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-4 col-md-12">
+        <div class="col-4 col-md-12 mt0 pl0 hfull ">
+        <div class="inblog">
           <img src="../assets/img/blog.png" alt="" class="blogimg" />
         </div>
       </div>
     </div>
+    </div>
+    
   </div>
 </template>
 
 <script>
-// import CourseOne from "@/components/home/courses/CourseOne.vue";
-// import CourseTwo from "@/components/home/courses/CourseTwo.vue";
-// import CourseThree from "@/components/home/courses/CourseThree.vue";
 export default {
   components: {
-    // CourseOne,
-    // CourseTwo,
-    // CourseThree,
   },
 };
 </script>

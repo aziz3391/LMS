@@ -1,4 +1,14 @@
 @import "../library/colors.scss";
+// *{
+//     margin: 0;
+//     padding: 0;
+// // }
+// .stlinecourseup {
+//     display: flex;
+//     flex-direction: column;
+//     width: 140px;
+//     height: 24px;
+// }
 
 .p14 {
     font-size: 14px;
@@ -52,10 +62,6 @@
     display: flex;
     // justify-content: center;
     align-items: center;
-}
-
-.w120 {
-    width: 120px;
 }
 
 li a {
@@ -147,7 +153,30 @@ label {
     }
 }
 
+.course {
+    &_level {
 
+        width: 331px;
+        height: 216px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px #d5d4d7;
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    &_eligibility {
+        width: 331px;
+        height: 342px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 20px #d5d4d7;
+        border-radius: 10px;
+        padding: 30px;
+
+    }
+}
 
 .mb18 {
     margin-bottom: 18px;
@@ -297,13 +326,11 @@ top: 448px;
     border-radius: 4px;
     font-size: 16px;
     font-family: "Medium";
-
+  
 }
-
-.lastlinehalfblog {
+.lastlinehalfblog{
     margin-top: 24px;
 }
-
 .redish {
     padding: 5px 20px;
     gap: 10px;
@@ -311,33 +338,42 @@ top: 448px;
     height: 34px;
     background: #FFEFEF;
     border-radius: 4px;
-
+    
     font-size: 16px;
     font-family: "Medium";
-
+  
 }
-
-.inblog{
-    object-fit: contain;
-    position: sticky;
-    top: 100px;
+.p5_20{
+    padding: 5px 20px;
 }
-
-.pl0{
-    padding-left: 0;
+.mt28faq{
+    margin-top: 28px;
 }
-.hfull
-{
-height: 1500px;
-    // height: 100%;
-    display: flex;justify-content: start;
+.ml0{
+    margin-left: 0;
+}.mt15mb40{
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
-.mb0{
-    margin-bottom: 0;
+.faqcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.fit{
-    height: fit-content;
+.mtb158{
+    margin: 158px 0 ;
 }
-.pr{
-    position: relative;
+.p18semibold{
+    font-size: 18px;
+    font-family: "Semi-bold";
+} 
+.mt80{
+    margin-top: 80px;
+}
+.w1440h540{
+    width: 1440px;
+    height: 540px;
+}
+.ma{
+    margin: auto;
 }
