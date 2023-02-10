@@ -12,6 +12,14 @@ export default {
     HeaderItem,
     FooterItem
   },
+  mounted(){
+    this.$store.dispatch('getBlogs')
+  },
+  computed:{
+    getBlogs(){
+    return this.$store.getters.Blogs
+    }
+  }
 };
 </script>
 

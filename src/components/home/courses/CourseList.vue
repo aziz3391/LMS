@@ -12,10 +12,10 @@
             gap: 40,
           }"
         >
-          <SplideSlide>
-            <CourseOne />
+          <SplideSlide v-for="(item, index) in courses" :key="index">
+            <CourSe :courses="item" />
           </SplideSlide>
-          <SplideSlide>
+          <!-- <SplideSlide>
             <CourseTwo />
           </SplideSlide>
           <SplideSlide>
@@ -26,7 +26,7 @@
           </SplideSlide>
           <SplideSlide>
             <CourseThree />
-          </SplideSlide>
+          </SplideSlide> -->
         </Splide>
       </div>
     </div>
@@ -34,18 +34,17 @@
 </template>
 
 <script>
-import CourseOne from "@/components/home/courses/CourseOne.vue";
-import CourseTwo from "@/components/home/courses/CourseTwo.vue";
-import CourseThree from "@/components/home/courses/CourseThree.vue";
+import CourSe from "../courses/CourSe.vue";
+
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 export default {
   components: {
     Splide,
     SplideSlide,
-    CourseOne,
-    CourseTwo,
-    CourseThree,
+    CourSe,
+  
   },
+  props: ["courses"],
 };
 </script>
 

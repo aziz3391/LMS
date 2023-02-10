@@ -14,40 +14,34 @@
             />
             <li class="p14 gray ma">Курсы</li>
           </ul>
+          <!-- <h1>{{ getCourses }}</h1> -->
         </div>
         <div class="ndlinecourse">
           <h1 class="m0">Курсы</h1>
           <div class="list_lang gap15 mt30">
-            <button class="btn h34w69">Все</button>
-            <button class="newsu c4F4F4F">Китайский</button>
+            <button class="btn btn_all">Все</button>
+            <button class="newsu" v-for="item in categories" :key="item._id">
+              {{ item.name }}
+            </button>
+
+            <!-- <button class="btn h34w69">Все</button> -->
+            <!-- <button class="newsu c4F4F4F">Китайский</button>
             <button class="newsu c4F4F4F">Английский</button>
-            <button class="newsu c4F4F4F">Немецкий</button>
+            <button class="newsu c4F4F4F">Немецкий</button> -->
           </div>
         </div>
       </div>
       <div class="oneitemcourse">
         <div class="wholeitemcourse w946 p0 mt32 dfc">
-          <div class="stlinecourse fit gap40 d-flex">
-            <CourseOne class="mt0" /><CourseTwo class="mt0" />
+          <div v-for="item in getCourses" :key="item._id" class="stlinecourse fit gap40 d-flex">
+            <CourSe :courses="item" class="mt40" /><CourSe :courses="item" class="mt40" />
           </div>
-          <div class="ndlinecourse fit gap40 d-flex">
-            <CourseThree /><CourseOne />
-          </div>
-          <div class="ndlinecourse fit gap40 d-flex">
-            <CourseThree /><CourseOne />
-          </div>
-          <div class="ndlinecourse fit gap40 d-flex">
-            <CourseThree /><CourseOne />
-          </div>
-          <div class="ndlinecourse fit gap40 d-flex">
-            <CourseThree /><CourseOne />
-          </div>
-          <div class="ndlinecourse fit gap40 d-flex">
-            <CourseThree /><CourseOne />
-          </div>
-          <div class="ndlinecourse fit gap40 d-flex">
-            <CourseThree /><CourseOne />
-          </div>
+          <!-- <div class="ndlinecourse fit gap40 d-flex"><CourSe :courses="getCourses" /><CourSe :courses="getCourses" /></div>
+          <div class="ndlinecourse fit gap40 d-flex"><CourSe :courses="getCourses" /><CourSe :courses="getCourses" /></div>
+          <div class="ndlinecourse fit gap40 d-flex"><CourSe :courses="getCourses" /><CourSe :courses="getCourses" /></div>
+          <div class="ndlinecourse fit gap40 d-flex"><CourSe :courses="getCourses" /><CourSe :courses="getCourses" /></div>
+          <div class="ndlinecourse fit gap40 d-flex"><CourSe :courses="getCourses" /><CourSe :courses="getCourses" /></div>
+          <div class="ndlinecourse fit gap40 d-flex"><CourSe :courses="getCourses" /><CourSe :courses="getCourses" /></div> -->
           <div class="rdlinecourse"></div>
         </div>
         <div class="col-3 col-md-12 sticky15 mt32 p0">
@@ -155,14 +149,24 @@
 </template>
 
 <script>
-import CourseOne from "@/components/home/courses/CourseOne.vue";
-import CourseTwo from "@/components/home/courses/CourseTwo.vue";
-import CourseThree from "@/components/home/courses/CourseThree.vue";
+import CourSe from "../components/home/courses/CourSe.vue";
+
 export default {
   components: {
-    CourseOne,
-    CourseTwo,
-    CourseThree,
+    CourSe,
+  },
+  mounted() {
+    this.$store.dispatch("getCategories");
+    this.$store.dispatch('getCourses')
+// console.log(this.$store.dispatch('getCourses'),"courseview");
+  },
+  computed: {
+    categories() {
+      return this.$store.getters.categories;
+    },
+    getCourses(){
+      return this.$store.getters.Courses
+    }
   },
 };
 </script>

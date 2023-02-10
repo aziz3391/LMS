@@ -1,14 +1,5 @@
 @import "../library/colors.scss";
-// *{
-//     margin: 0;
-//     padding: 0;
-// // }
-// .stlinecourseup {
-//     display: flex;
-//     flex-direction: column;
-//     width: 140px;
-//     height: 24px;
-// }
+
 
 .p14 {
     font-size: 14px;
@@ -19,11 +10,16 @@
     color: $purple;
 
 }
-
+.mt40{
+    margin-top: 40px;
+}
 .fit {
     width: fit-content;
 }
-
+.btn_all{
+    height: 32px;
+    padding: 5px 20px;
+}
 .df {
     display: flex;
 }

@@ -9,7 +9,7 @@ const routes = [
   },
   {
     path: '/about',
-    name: 'about',
+    // name: 'about',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
@@ -17,24 +17,29 @@ const routes = [
   },
   {
     path: '/course',
-    name: 'course',
+    // name: 'course',
     component: () => import('../views/CourseView.vue')
   },
   {
-    path: '/blog',
-    name: 'blog',
+    path: '/blogs',
+    // name: 'blogs',
     component: () => import('../views/BlogView.vue')
   },
   {
-    path: '/faq',
-    name: 'faq',
-    component: () => import('../views/more/FaqView.vue')
+    path: '/blogs/:id',
+    // name: 'blog',
+    component: () => import('../components/blog/BlogMore.vue')
   },
   {
-    path: '/blogs',
-    name: 'blogs',
-    component: () => import('../components/blog/BlogMore.vue')
-  }
+    path: '/faq',
+    // name: 'faq',
+    component: () => import('../views/more/FaqView.vue')
+  },
+  // {
+  //   path: '/blogs',
+  //   // name: 'blogs',
+  //   component: () => import('../components/blog/BlogMore.vue')
+  // }
 
 ]
 

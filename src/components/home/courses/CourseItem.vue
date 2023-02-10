@@ -3,10 +3,11 @@
     <div class="container">
       <div class="row d-flexco">
         <h2>Курсы иностранных языков для любого уровня</h2>
+        <!-- <h2>{{ courses }}</h2> -->
         <button class="btn outline">Все курсы</button>
       </div>
     </div>
-    <CourseList />
+    <CourseList :courses="courses"/>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ export default {
   components: {
     CourseList,
   },
+  props:['courses']
 };
 </script>
 

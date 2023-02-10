@@ -16,7 +16,7 @@
           <router-link to="/about"> О нас </router-link>
         </li>
         <li>
-          <router-link to="/blog"> Блог </router-link>
+          <router-link to="/blogs"> Блог </router-link>
         </li>
         <li class="dropdown">
           <span class="dropbtn"> Ещё </span>

@@ -14,7 +14,7 @@
                 alt=""
               />
               <li class="p14 gray ma">
-                <router-link to="/blog"> Блог </router-link>
+                <router-link to="/blogs"> Блог </router-link>
               </li>
               <img
                 class="w2424 ma"
@@ -26,27 +26,18 @@
           </div>
           <div class="d-flex">
             <div class="ndlinecourse">
+              <!-- <button @click="getBloks" class="btn">click</button>
+              <button @click="getBlok" class="btn">click2</button> -->
               <h2 class="m0 mt28mb30 h162">
-                Новая система скидок в <br />
-                Language2GO: успейте забрать <br />
-                максимум!
+                <router-link  class="nostyle" :to="`/blogs/${getBlog._id}`"> 
+                {{ getBlog.title }}
+                </router-link>
               </h2>
-              <p class="p20medium e90d1">05-06-2022</p>
+              <p class="p20medium e90d1">{{getdate(getBlog.createdAt)}}</p>
               <p class="p16medium c585858 blogmoretxt">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы обучения. Именно поэтому мы
-                предлагаем нашим клиентам не только бесплатные пробные уроки, но
-                и гибкую систему скидок, которая позволит существенно снизить
-                затраты. <br /><br />
-                Начните с выбора оптимальной программы обучения: бесплатное
-                тестирование определит ваш уровень знаний и предложит лучший
-                вариант для быстрого прогресса. Следующий шаг — активация купона
-                и приятное изменение стоимости курса в меньшую сторону.
-                <br /><br />
-                Купоны на скидку можно найти в соцсетях Language2GO, получить в
-                рассылке для лояльных клиентов или в приобрести в подарок для
-                ваших близких, а бесплатные уроки ждут всех желающих на нашем
-                сайте!
+                <router-link  class="nostyle" :to="`/blogs/${getBlog._id}`"> 
+                {{getBlog.text}}
+                </router-link>
               </p>
 
               <div class="lastlingblog w823 mb90 d-flex between">
@@ -73,7 +64,7 @@
                   </div>
                 </div>
               </div>
-              <div class="rowblog dfaic pr ">
+              <div class="rowblog dfaic pr">
                 <h3>Другие новости</h3>
                 <button class="btn outline">Все новости</button>
               </div>
@@ -81,65 +72,27 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-md-12 mt0 dfgap40">
-            <div class="blog1">
-              <p class="p24bold">
-                Новая система скидок в Language2GO: успейте забрать максимум!
+          <div class="col-12 col-md-12 mt0  dfgap40">
+            <div class="blog1 " v-for="item in getBlogs" :key="item._id">
+              <p style="width:770px" class=" heading_max_blog">
+                <router-link  class="nostyle" :to="`/blogs/${item._id}`"> 
+                {{ item.title }}
+                </router-link>
               </p>
-              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
-              <p class="p16medium">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы <br />
-                обучения.
-              </p>
-              <div class="lastlineblog d-flex jcb mt20">
-                <button class="newsu">Новость</button>
-                <div class="right_blog d-flex p5 w120">
-                  <h5>Подробнее</h5>
-                  <img
-                    src="../../assets/else/arrow-right.png"
-                    alt="right  arrow"
-                    class="arrow"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="blog1">
-              <p class="p24bold">
-                Новая система скидок в Language2GO: успейте забрать максимум!
-              </p>
-              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
-              <p class="p16medium">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы <br />
-                обучения.
+              <p class="p16medium e90d1 mt6mb10">{{getdate(item.createdAt)}}</p>
+              <p class="p16medium blogmore_text">
+                <router-link  class="nostyle" :to="`/blogs/${item._id}`"> 
+               {{item.text}}
+               </router-link>
               </p>
               <div class="lastlineblog d-flex jcb mt20">
                 <button class="newsu">Новость</button>
                 <div class="right_blog d-flex p5 w120">
-                  <h5>Подробнее</h5>
-                  <img
-                    src="../../assets/else/arrow-right.png"
-                    alt="right  arrow"
-                    class="arrow"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="blog1">
-              <p class="p24bold">
-                Новая система скидок в Language2GO: успейте забрать максимум!
-              </p>
-              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
-              <p class="p16medium">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы <br />
-                обучения.
-              </p>
-              <div class="lastlineblog d-flex jcb mt20">
-                <button class="newsu">Новость</button>
-                <div class="right_blog d-flex p5 w120">
-                  <h5>Подробнее</h5>
+                  <h5>
+                    <router-link  class="nostyle" :to="`/blogs/${item._id}`"> 
+                    Подробнее
+                    </router-link>
+                    </h5>
                   <img
                     src="../../assets/else/arrow-right.png"
                     alt="right  arrow"
@@ -163,6 +116,26 @@
 
 <script>
 export default {
+  mounted() {
+    // this.$store.dispatch('getBlogs')
+    this.id = this.$route.params.id;
+    console.log(this.id);
+    this.$store.dispatch("getBlogId", this.id);
+  },
+  methods:{
+    getdate(d){
+            let t = new Date(d)
+            return `${t.getDate()}-${t.getMonth()}-${t.getFullYear()}`
+        }
+  },
+  computed: {
+    getBlogs() {
+      return this.$store.getters.Blogs;
+    },
+    getBlog() {
+      return this.$store.getters.Blog;
+    },
+  },
   components: {},
 };
 </script>

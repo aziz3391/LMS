@@ -5,99 +5,29 @@
         <h2>Полезные новости и статьи</h2>
         <button class="btn outline w127">Все новости</button>
       </div>
-
+      <!-- <h5>{{ lastblogs }}</h5> -->
       <div class="nfuseful d-flex jcb aic w100percent gap40">
-        <div class="col-4 col-md-12 dfaicjcc uborder ">
-          <div class="incol">
-            <div class="stlineu w373 mb10">
-              <h4 class="h24 mb6">
-                Новая система скидок в <br />
-                Language2GO: успейте забрать максимум!
-              </h4>
-              <p class="p16blue">05-06-2022</p>
-            </div>
-            <div class="ndlineu w373 mb24">
-              <p class="p16">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы обучения.
-              </p>
-            </div>
-            <div class="rdlineu d-flex h34 jcb w373">
-              <button class="newsu">Новость</button>
-              <div class="right_rdlineu ">
-                <p class="lh24">Подробнее</p>
-                <img
-                  class="ma"
-                  src="../../../assets/else/arrow-right.png"
-                  alt="right arrow"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      <div class="col-4 col-md-12 dfaicjcc uborder  ">
-          <div class="incol">
-            <div class="stlineu w373 mb10">
-              <h4 class="h24 mb6">
-                Новая система скидок в <br />
-                Language2GO: успейте забрать максимум!
-              </h4>
-              <p class="p16blue">05-06-2022</p>
-            </div>
-            <div class="ndlineu w373 mb24">
-              <p class="p16">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы обучения.
-              </p>
-            </div>
-            <div class="rdlineu d-flex h34 jcb w373">
-              <button class="newsu">Новость</button>
-              <div class="right_rdlineu ">
-                <p class="lh24">Подробнее</p>
-                <img
-                  class="ma"
-                  src="../../../assets/else/arrow-right.png"
-                  alt="right arrow"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 col-md-12 dfaicjcc uborder  ">
-          <div class="incol">
-            <div class="stlineu w373 mb10">
-              <h4 class="h24 mb6">
-                Новая система скидок в <br />
-                Language2GO: успейте забрать максимум!
-              </h4>
-              <p class="p16blue">05-06-2022</p>
-            </div>
-            <div class="ndlineu w373 mb24">
-              <p class="p16">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы обучения.
-              </p>
-            </div>
-            <div class="rdlineu d-flex h34  jcb w373">
-              <button class="newsu">Новость</button>
-              <div class="right_rdlineu ">
-                <p class="lh24">Подробнее</p>
-                <img
-                  class="ma"
-                  src="../../../assets/else/arrow-right.png"
-                  alt="right arrow"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <UsefulItem
+          v-for="item in lastblogs"
+          :key="item._id"
+          :lastblogs="item"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import UsefulItem from "@/components/home/usefulinfo/UsefulItem.vue";
+export default {
+  components: {
+    UsefulItem,
+  },
+  props: ["lastblogs"],
+  mounted() {
+    console.log(this.lastblogs, "useful");
+  },
+};
 </script>
 
 <style lang="scss">

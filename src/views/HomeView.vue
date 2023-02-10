@@ -1,13 +1,15 @@
 <template>
   <WelcomeItem />
-  <CourseItem />
+  <!-- <h1>{{ getCourses }}</h1> -->
+  <CourseItem :courses="getCourses"/>
   <ForWhom />
   <ReasonWhy />
   <EffectItem />
   <HowItworks />
   <QuoteItem />
   <RegistraTion />
-  <UsefulInfo />
+  <!-- <h1>{{ lastBlogs }}</h1> -->
+  <UsefulInfo :lastblogs="lastBlogs"/>
   <FaQuest />
 </template>
 
@@ -36,5 +38,19 @@ export default {
     UsefulInfo,
     FaQuest,
   },
+  mounted(){
+    this.$store.dispatch('getCourses')
+    this.$store.dispatch('getBlogs')
+    
+  },
+  computed:{
+    getCourses(){
+      return this.$store.getters.Courses
+    },
+    lastBlogs(){
+      return this.$store.getters.lastBlogs
+    }
+
+  }
 };
 </script>

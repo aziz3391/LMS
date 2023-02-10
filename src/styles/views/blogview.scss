@@ -258,6 +258,7 @@ top: 448px;
 }
 
 .half {
+    position: relative;
     width: 48%;
     height: 346px;
     background: #FFFFFF;
@@ -300,8 +301,14 @@ top: 448px;
 
 }
 
+
 .lastlinehalfblog {
-    margin-top: 24px;
+    // margin-top: 24px;
+    position:absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+gap: 170px;
 }
 
 .redish {
@@ -316,15 +323,49 @@ top: 448px;
     font-family: "Medium";
 
 }
+.nostyle{
+    color: black;
+    :hover{
+        color: black;
+    }
+    :active{
+        color: black;
+    }
+    :visited{
+        color: black;
+    }
+    
 
+}
+.mta{
+    margin-bottom: auto;
+}
+// .pabottom{
+    // position: relative;
+    // bottom: 20px;
+    // left: 20px;
+// }
+.overflowhidden{
+    max-height: 78px;
+    overflow: hidden;
+}
 .inblog{
     object-fit: contain;
     position: sticky;
     top: 100px;
 }
-
+.maxheight_60{
+    max-height: 60px;
+    overflow: hidden;
+}
 .pl0{
     padding-left: 0;
+}
+.w410{
+    width: 410px;
+}
+.w467{
+    width: 467px;
 }
 .hfull
 {

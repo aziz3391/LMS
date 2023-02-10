@@ -57,162 +57,11 @@
               </div>
             </div>
           </div>
-          <div class="blog2">
-            <div class="half">
-              <p class="p24bold">
-                Новая система скидок в <br />
-                Language2GO: успейте забрать <br />
-                максимум!
-              </p>
-              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
-              <p class="p16medium c585858">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы обучения.
-              </p>
-              <div class="lastlinehalfblog d-flex jcb">
-                <button class="greenish">Статья</button>
-                <div class="right_blog ">
-                   <router-link to="/blogs" class="d-flex p5 w120"> <h5>Подробнее</h5> 
-                  <img
-                    src="../assets/else/arrow-right.png"
-                    alt="right  arrow"
-                    class="arrow"
-                  />
-                   </router-link>
-                </div>
-              </div>
-            </div>
-            <div class="half2">
-              <p class="p24bold">
-                Новая система скидок в <br />
-                Language2GO: успейте забрать <br />
-                максимум!
-              </p>
-              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
-              <p class="p16medium c585858">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы обучения.
-              </p>
-              <div class="lastlinehalfblog d-flex jcb">
-                <button class="redish">Интересное</button>
-                <div class="right_blog">
-                   <router-link to="/blogs" class=" d-flex p5 w120"> <h5> Подробнее </h5>
-                  <img
-                    src="../assets/else/arrow-right.png"
-                    alt="right  arrow"
-                    class="arrow"
-                  />
-                   </router-link>
-                </div>
-              </div>
-            </div>
+         
+          <div class="row">
+           <UsefulItem v-for="item in getBlogs" :key="item._id" :lastblogs="item"/>
           </div>
-          <div class="blog3">
-            <div class="half">
-              <p class="p24bold">
-                Новая система скидок в <br />
-                Language2GO: успейте забрать <br />
-                максимум!
-              </p>
-              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
-              <p class="p16medium c585858">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы обучения.
-              </p>
-              <div class="lastlinehalfblog d-flex jcb">
-                <button class="greenish">Статья</button>
-                <div class="right_blog ">
-                  <router-link class="d-flex p5 w120" to="/blogs"> 
-                 
-                  <h5>Подробнее</h5>
-                  <img
-                    src="../assets/else/arrow-right.png"
-                    alt="right  arrow"
-                    class="arrow"
-                  />
-                   </router-link>
-                </div>
-              </div>
-            </div>
-            <div class="half2">
-              <p class="p24bold">
-                Новая система скидок в <br />
-                Language2GO: успейте забрать <br />
-                максимум!
-              </p>
-              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
-              <p class="p16medium c585858">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы обучения.
-              </p>
-              <div class="lastlinehalfblog d-flex jcb">
-                <button class="redish">Интересное</button>
-                <div class="right_blog">
-                   <router-link class=" d-flex  w120 p" to="/blogs"> 
-                  <h5>Подробнее</h5>
-                  <img
-                    src="../assets/else/arrow-right.png"
-                    alt="right  arrow"
-                    class="arrow"
-                  />
-                    </router-link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="blog3">
-            <div class="half">
-              <p class="p24bold">
-                Новая система скидок в <br />
-                Language2GO: успейте забрать <br />
-                максимум!
-              </p>
-              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
-              <p class="p16medium c585858">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы обучения.
-              </p>
-              <div class="lastlinehalfblog d-flex jcb">
-                <button class="greenish">Статья</button>
-                <div class="right_blog ">
-                  <router-link class="d-flex p5 w120" to="/blogs"> 
-                 
-                  <h5>Подробнее</h5>
-                  <img
-                    src="../assets/else/arrow-right.png"
-                    alt="right  arrow"
-                    class="arrow"
-                  />
-                   </router-link>
-                </div>
-              </div>
-            </div>
-            <div class="half2">
-              <p class="p24bold">
-                Новая система скидок в <br />
-                Language2GO: успейте забрать <br />
-                максимум!
-              </p>
-              <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
-              <p class="p16medium c585858">
-                Для многих стоимость изучения иностранного языка является важным
-                критерием при выборе системы обучения.
-              </p>
-              <div class="lastlinehalfblog d-flex jcb">
-                <button class="redish">Интересное</button>
-                <div class="right_blog">
-                   <router-link class=" d-flex  w120 p" to="/blogs"> 
-                  <h5>Подробнее</h5>
-                  <img
-                    src="../assets/else/arrow-right.png"
-                    alt="right  arrow"
-                    class="arrow"
-                  />
-                    </router-link>
-                </div>
-              </div>
-            </div>
-          </div>
+     
         </div>
         <div class="col-4 col-md-12 mt0 pl0 hfull ">
         <div class="inblog">
@@ -226,9 +75,24 @@
 </template>
 
 <script>
+import UsefulItem from '@/components/home/usefulinfo/UsefulItem.vue'
 export default {
   components: {
+    UsefulItem
   },
+  mounted(){
+    this.$store.dispatch('getBlogs')
+    this.id = this.$route.params.id
+    this.$store.dispatch('getBlogId',this.id)
+  },
+  computed:{
+    getBlogs(){
+    return this.$store.getters.Blogs
+    },
+    getBlogId(){
+    return this.$store.getters.Blog
+    }
+  }
 };
 </script>
 
