@@ -1,6 +1,6 @@
 <template>
   <div class="item_f">
-    <img src="../../../assets/flags/china.png" alt="german" class="f1" />
+    <img :src="`${url}/${courses.img}`" alt="german" class="f1" />
     <!-- <img :src="require(`@/assets/flags/`)" alt=""> -->
    
     <h3 class="name">{{ courses.title }}</h3>
@@ -31,7 +31,11 @@
 <script>
 export default {
   props: ["courses"],
-  computed: {},
+  computed: {
+    url(){
+      return this.$store.getters.url
+    }
+  },
 };
 </script>
 

@@ -1,6 +1,6 @@
 <template>
-    <div class=" col-6 noborder">
-    <div class="half w467 ">
+    <!-- <div class=" col-6 noborder"> -->
+    <div class="half heightfit ">
               <router-link  class="nostyle" :to="`/blogs/${lastblogs._id}`"> 
               <p class="p24bold w410 maxheight_60" >
                 {{ lastblogs.title}} 
@@ -8,7 +8,7 @@
               </router-link>
               <p class="p16medium e90d1 mt6mb10">{{getdate(lastblogs.createdAt)}}</p>
               <router-link  class="nostyle"  :to="`/blogs/${lastblogs._id}`"> 
-              <p class="p16medium overflowhidden c585858 ">
+              <p class="p16medium overflowhidden mb50 c585858 ">
                {{lastblogs.text}}
               </p></router-link>
               <div class="lastlinehalfblog  d-flex jcb">
@@ -26,7 +26,7 @@
                 </div>
               </div>
             </div>
-            </div>
+            <!-- </div> -->
 
 </template>
 

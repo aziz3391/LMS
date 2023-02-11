@@ -241,7 +241,9 @@ height: 254px;
 left: 240px;
 top: 448px;
 */
-
+.w100per{
+    width: 100%;
+}
 .blog1 {
     height: 254px;
     padding: 40px;
@@ -400,7 +402,7 @@ top: 448px;
 }
 .hfull
 {
-height: 1500px;
+// height: ;
     // height: 100%;
     display: flex;justify-content: start;
 }
@@ -430,4 +432,7 @@ width: fit-content;
 .lastlineblog{
     position:relative;
     bottom: -5px;
+}
+.h100per{
+    height: 100%;
 }

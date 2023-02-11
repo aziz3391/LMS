@@ -21,13 +21,13 @@
         <li class="dropdown">
           <span class="dropbtn"> Ещё </span>
           <div class="dropdown-content">
-            <div class="dropitem">
+            <div class="dropitem border_radius-up10">
               <a href="#">FAQ</a>
             </div>
             <div class="dropitem">
               <a href="#">Контакты</a>
             </div>
-            <div class="dropitem">
+            <div class="dropitem border_radius-down10">
               <a href="#">Условия оплаты</a>
             </div>
           </div>

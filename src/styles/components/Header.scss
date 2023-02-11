@@ -20,7 +20,7 @@ body {
 nav {
     border-bottom: 1px solid #e4e4ea;
     width: 100%;
-    height: 96px;
+    height: 9%;
     display: flex;
     justify-content: space-between;
 }
@@ -34,6 +34,7 @@ nav {
 
 .ulhead {
     display: flex;
+    transform: none;
     list-style-type: none;
     width: 355px;
     justify-content: flex-start;
@@ -55,14 +56,16 @@ nav {
 
         // border: 1px solid black;
         a {
-            // text-decoration: none;
+            text-decoration: none;
             color: black;
+            font-family: "Semi-bold";
 
             &:hover,
-            :active {
+            :active,
+            :visited {
                 text-decoration: none;
                 color: $purple;
-                border-bottom: 1px solid $purple;
+                transform: none;
             }
         }
 
@@ -91,26 +94,61 @@ nav {
     border-radius: 8px;
     border: 0px;
     color: white;
-    background-color: #78258D;
+    background-color: #78258d;
 }
 
 .dropdown-content {
     display: none;
+    position: absolute;
+    left: -55px;
+    top: 55px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    transition-duration: 1s;
+transition-delay: 1s;
+    &:hover {
+        display: block;
+    }
+
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.15));
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 24px solid rgb(255, 255, 255);
+        position: absolute;
+        top: -25px;
+        left: 75px;
+    }
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    margin: auto;
+    font-size: 16px;
+    font-family: "Semi-bold";
 }
 
 .dropbtn:hover+.dropdown-content {
+    transition-duration: 700ms;
     display: block;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding: 5px 0px;
-    width: 194px;
-    height: 142px;
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.15));
-    border-radius: 10px;
+    transition-delay: 1s;
 }
 
 .dropitem {
+    a {
+        text-decoration: none;
+        padding: 5px 0px;
+    }
+
+    border-bottom: 1px solid #e7e7e7;
     width: 194px;
     height: 44px;
     padding: 10px 15px;
@@ -119,4 +157,13 @@ nav {
     align-items: center;
     font-family: "Semi-bold";
     background-color: white;
+}
+
+.border_radius-up10 {
+    border-radius: 10px 10px 0 0;
+}
+
+.border_radius-down10 {
+    border-radius: 0 0 10px 10px;
+    border-bottom: 0;
 }

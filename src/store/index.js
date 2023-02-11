@@ -4,6 +4,7 @@ import { createStore } from 'vuex'
  import category  from './modules/category';
  import course  from './modules/courses';
  import blog from './modules/blog';
+ import faq from './modules/faq';
  
 export default createStore({
   state: {
@@ -20,6 +21,6 @@ export default createStore({
            
   },
   modules: {
-    category,course, blog
+    category,course, blog,faq
   }
 })

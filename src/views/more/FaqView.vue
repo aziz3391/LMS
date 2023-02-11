@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="row mt28faq ">
-        <FaqItem class="mb10" v-for="(item, index) in list" :key="index" :faq="item"
+        <FaqItem class="mb10" v-for="(item, index) in getFaqs" :key="index" :faq="item"
       list="list"
       />
       </div>
@@ -85,6 +85,13 @@ export default {
             ]
         }
     },
+    mounted(){
+      this.$store.dispatch('getFaqs')
+    },computed:{
+      getFaqs(){
+        return this.$store.getters.Faqs
+      }
+    }
 };
 </script>
 <style lang="scss" scoped>

@@ -13,7 +13,7 @@
           <img src="../../../assets/img/FAQ.png" alt="faq" class="faq" />
         </div>
       </div>
-      <div class="col-8 col-md-12"><FaqItem class="mb10" v-for="(item, index) in list" :key="index" :faq="item"
+      <div class="col-8 col-md-12"><FaqItem class="mb10" v-for="(item, index) in getLastFaqs" :key="index" :faq="item"
       list="list"
       /></div>
     </div>
@@ -46,6 +46,14 @@ export default {
   components: {
     FaqItem,
   },
+  mounted(){
+    this.$store.dispatch('getLastFaqs')
+  },
+  computed:{
+    getLastFaqs(){
+      return this.$store.getters.LastFaqs
+    }
+  }
 };
 </script>
 

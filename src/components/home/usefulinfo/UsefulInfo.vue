@@ -6,7 +6,7 @@
         <button class="btn outline w127">Все новости</button>
       </div>
       <!-- <h5>{{ lastblogs }}</h5> -->
-      <div class="nfuseful d-flex jcb aic w100percent gap40">
+      <div class="nfuseful d-flex jcb aic w100percent mt20 gap40">
         <UsefulItem
           v-for="item in lastblogs"
           :key="item._id"

@@ -32,7 +32,7 @@
       </div>
       <div class="row">
         <div class="col-8 col-md-12 dfgap40">
-          <div class="blog1">
+          <!-- <div class="blog1">
             <p class="p24bold">
               Новая система скидок в Language2GO: успейте забрать максимум!
             </p>
@@ -56,43 +56,45 @@
                   </router-link>
               </div>
             </div>
-          </div>
-         
+          </div> -->
+
           <div class="row">
-           <UsefulItem v-for="item in getBlogs" :key="item._id" :lastblogs="item"/>
+            <div v-for="(item, index) in getBlogs"
+                :key="index" :class="`${index==0?'col-12 ':'col-6'} noborder`">
+              <UsefulItem :lastblogs="item"
+              />
+            </div>
           </div>
-     
         </div>
-        <div class="col-4 col-md-12 mt0 pl0 hfull ">
-        <div class="inblog">
-          <img src="../assets/img/blog.png" alt="" class="blogimg" />
+        <div class="col-4 col-md-12 mt0 pl0 hfull">
+          <div class="inblog">
+            <img src="../assets/img/blog.png" alt="" class="blogimg" />
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    
   </div>
 </template>
 
 <script>
-import UsefulItem from '@/components/home/usefulinfo/UsefulItem.vue'
+import UsefulItem from "@/components/home/usefulinfo/UsefulItem.vue";
 export default {
   components: {
-    UsefulItem
+    UsefulItem,
   },
-  mounted(){
-    this.$store.dispatch('getBlogs')
-    this.id = this.$route.params.id
-    this.$store.dispatch('getBlogId',this.id)
+  mounted() {
+    this.$store.dispatch("getBlogs");
+    this.id = this.$route.params.id;
+    this.$store.dispatch("getBlogId", this.id);
   },
-  computed:{
-    getBlogs(){
-    return this.$store.getters.Blogs
+  computed: {
+    getBlogs() {
+      return this.$store.getters.Blogs;
     },
-    getBlogId(){
-    return this.$store.getters.Blog
-    }
-  }
+    getBlogId() {
+      return this.$store.getters.Blog;
+    },
+  },
 };
 </script>
 

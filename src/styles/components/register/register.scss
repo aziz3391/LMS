@@ -67,14 +67,16 @@
 
 input[type=checkbox] {
     display: none;
-    &:checked + label::before{
+    &:checked + .label1::before{
         background-color: $purple;
         background-image: url(/src/assets/else/check.png);
     }
 }
+.n{
+    color: black;
+}
 
-
-label {
+.label1 {
     display: flex;
     object-fit: contain;
     // align-items: center;

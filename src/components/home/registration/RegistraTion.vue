@@ -23,7 +23,7 @@
             <div class="d-flex">
               <input id="agree" type="checkbox" class="checkbox" />
 
-              <label class="p16w561 gray checkit" for="agree">
+              <label class="p16w561 label1 gray checkit" for="agree">
                 <div class="n">
                   Отправляя заявку, я соглашаюсь с
                   <router-link to="/">

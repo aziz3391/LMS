@@ -1,6 +1,6 @@
 <template>
-  <div class="container full">
-    <div class="row1 w1480vh hfull d-flex">
+  <div class="container full mb370">
+    <div class="row1 w1480vh  d-flex">
       <div class="col-8 col-md-12 mt0">
         <div class="dfc">
           <div class="stlinecourseup d-flex">
@@ -26,14 +26,14 @@
           </div>
           <div class="d-flex">
             <div class="ndlinecourse">
-              <!-- <button @click="getBloks" class="btn">click</button>
-              <button @click="getBlok" class="btn">click2</button> -->
+            
               <h2 class="m0 mt28mb30 h162">
                 <router-link  class="nostyle" :to="`/blogs/${getBlog._id}`"> 
                 {{ getBlog.title }}
                 </router-link>
               </h2>
               <p class="p20medium e90d1">{{getdate(getBlog.createdAt)}}</p>
+              <img v-if="getBlog.img" class="w100per" :src="`${url}/${getBlog.img}`" alt="">
               <p class="p16medium c585858 blogmoretxt">
                 <router-link  class="nostyle" :to="`/blogs/${getBlog._id}`"> 
                 {{getBlog.text}}
@@ -72,7 +72,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-md-12 mt0  dfgap40">
+          <div class="col-12 col-md-12 mt0 nomargin dfgap40">
             <div class="blog1 " v-for="item in getBlogs" :key="item._id">
               <p style="width:770px" class=" heading_max_blog">
                 <router-link  class="nostyle" :to="`/blogs/${item._id}`"> 
@@ -118,6 +118,7 @@
 export default {
   mounted() {
     // this.$store.dispatch('getBlogs')
+    window.scroll(0,0)
     this.id = this.$route.params.id;
     console.log(this.id);
     this.$store.dispatch("getBlogId", this.id);
@@ -128,9 +129,18 @@ export default {
             return `${t.getDate()}-${t.getMonth()}-${t.getFullYear()}`
         }
   },
+  watch:{
+    $route(to){
+      window.scroll(0,0)
+      this.$store.dispatch('getBlogId',to.params.id)
+    }
+  },
   computed: {
     getBlogs() {
       return this.$store.getters.Blogs;
+    },
+    url(){
+      return this.$store.getters.url
     },
     getBlog() {
       return this.$store.getters.Blog;

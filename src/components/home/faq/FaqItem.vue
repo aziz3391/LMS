@@ -2,7 +2,7 @@
   <div @click="toggle=!toggle" :class="`faq_box ${toggle?'open':''}`" >
     <div class="faq_header ">
       <div class="faq_title  ">
-        <h4 class="h24bold  ml0">{{faq.question}}</h4>
+        <h4 class="h24bold faq_question ml0">{{faq.question}}</h4>
     
         <div  class="plus">  </div>
       </div>
@@ -17,23 +17,10 @@ export default {
     props:["faq"],
     data() {
         return {
-            // faq:[
-            //     {question:'',
-            //     answer:''
-            //     }
-            // ],
+        
             toggle:false
         }
     },
-    // methods:{
-
-    // },
-    // mounted(){
-    //     faq()
-    //     {
-    //         this.list==this.faq
-    //     }
-    // }
 };
 </script>
 
