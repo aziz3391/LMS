@@ -7,7 +7,7 @@
             <div class="up">
               <div class="welcoming_word">Language to go</div>
               <h1>Онлайн школа иностранных языков</h1>
-              <h4>
+              <h4 class="welcome_h4">
                 Достигайте своих целей с помощью авторских игровых методик от
                 носителей языка
               </h4>

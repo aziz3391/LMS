@@ -6,7 +6,7 @@
   />
   <div class="container cntr_mt">
     <div class="row">
-      <div class="col-4 col-md-12">
+      <div class="col-4 col-md-12 mt100">
         <h3 class="h3for">Кому подойдет <span class="l2go"> L2GO </span></h3>
 
         <p>
@@ -17,7 +17,7 @@
 
         <button class="btn mt-40">Попробовать бесплатно</button>
       </div>
-      <div class="col-8 col-md-12">
+      <div class="col-8 col-md-12 mt100">
         <div class="row">
           <div class="col-6 col-sm-12" v-for="(el, i) in whom" :key="i">
             <div class="whom_box">

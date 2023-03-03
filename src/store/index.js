@@ -5,7 +5,8 @@ import { createStore } from 'vuex'
  import course  from './modules/courses';
  import blog from './modules/blog';
  import faq from './modules/faq';
- 
+ import notif from './modules/notif'
+
 export default createStore({
   state: {
     url:'http://localhost:3003'
@@ -21,6 +22,6 @@ export default createStore({
            
   },
   modules: {
-    category,course, blog,faq
+    category,course, blog,faq,notif
   }
 })

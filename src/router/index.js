@@ -35,11 +35,18 @@ const routes = [
     // name: 'faq',
     component: () => import('../views/more/FaqView.vue')
   },
-  // {
-  //   path: '/blogs',
-  //   // name: 'blogs',
-  //   component: () => import('../components/blog/BlogMore.vue')
-  // }
+  {
+    path: '/contact',
+    component: () => import('../views/more/ContactView.vue')
+  },
+  {
+    path: '/support',
+    component: () => import('../views/more/SupportPage.vue')
+  },
+  {
+    path: '/offer',
+    component: () => import('../views/more/OfferPage.vue')
+  },
 
 ]
 

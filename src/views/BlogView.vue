@@ -32,37 +32,16 @@
       </div>
       <div class="row">
         <div class="col-8 col-md-12 dfgap40">
-          <!-- <div class="blog1">
-            <p class="p24bold">
-              Новая система скидок в Language2GO: успейте забрать максимум!
-            </p>
-            <p class="p16medium e90d1 mt6mb10">05-06-2022</p>
-            <p class="p16medium">
-              Для многих стоимость изучения иностранного языка является важным
-              критерием при выборе системы <br />
-              обучения.
-            </p>
-            <div class="lastlineblog d-flex jcb mt20">
-              <button class="newsu">Новость</button>
-              <div class="right_blog ">
-                
-                  <router-link to="/blogs" class="d-flex p5 w120"> <h5>Подробнее </h5>
-                
-                <img
-                  src="../assets/else/arrow-right.png"
-                  alt="right  arrow"
-                  class="arrow"
-                />
-                  </router-link>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="row">
-            <div v-for="(item, index) in getBlogs"
-                :key="index" :class="`${index==0?'col-12 ':'col-6'} noborder`">
-              <UsefulItem :lastblogs="item"
-              />
+          <div class="error_blog" v-if="false">
+            There is an internal error on the website...
+          </div>
+          <div class="row" v-if="row_visible">
+            <div
+              v-for="(item, index) in getBlogs"
+              :key="index"
+              :class="`${index == 0 ? 'col-12 ' : 'col-6'} noborder`"
+            >
+              <UsefulItem :lastblogs="item" />
             </div>
           </div>
         </div>
@@ -82,18 +61,35 @@ export default {
   components: {
     UsefulItem,
   },
+  data() {
+    return {
+      row_visible: true,
+    
+    };
+  },
   mounted() {
     this.$store.dispatch("getBlogs");
-    this.id = this.$route.params.id;
-    this.$store.dispatch("getBlogId", this.id);
+    if(this.$route.params.id){
+      this.id = this.$route.params.id;
+      console.log(this.id);
+      this.$store.dispatch("getBlogId", this.id);
+    }
   },
   computed: {
     getBlogs() {
       return this.$store.getters.Blogs;
+
     },
     getBlogId() {
-      return this.$store.getters.Blog;
+      if (this.$store.getters.Blog) {
+        return this.$store.getters.Blog;
+      } else {
+        let inverse = !this.row_visible
+     
+        return inverse;
+      }
     },
+  
   },
 };
 </script>
